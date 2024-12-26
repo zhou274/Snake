@@ -942,13 +942,14 @@ GameObject:
   - component: {fileID: 340881738}
   - component: {fileID: 340881740}
   - component: {fileID: 340881739}
+  - component: {fileID: 340881741}
   m_Layer: 5
   m_Name: cebianlan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &340881738
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1014,6 +1015,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340881737}
   m_CullTransparentMesh: 1
+--- !u!114 &340881741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340881737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac6b58f61b53cd74995a080cf70da39e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CebainlanUI: {fileID: 340881737}
+  clickid: 
 --- !u!64 &440115303
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1845,7 +1860,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1021498414}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 340881741}
+        m_TargetAssemblyTypeName: CebianlanManager, Assembly-CSharp
+        m_MethodName: OkPan
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1021498414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2633,7 +2660,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1533553100}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 340881741}
+        m_TargetAssemblyTypeName: CebianlanManager, Assembly-CSharp
+        m_MethodName: CancelPan
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1533553100
 MonoBehaviour:
   m_ObjectHideFlags: 0
