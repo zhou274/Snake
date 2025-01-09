@@ -183,19 +183,11 @@ public class PlayerController : MonoBehaviour
 
             AudioManager.instance.PlayDeadSound();
             Time.timeScale=0f;
-            ShowInterstitialAd("3hai1a0e71d53t86r7",
+            ShowInterstitialAd("af36h9l6kgmfea3m83",
            () => {
-               Debug.LogError("--插屏广告完成--");
-               var data = new JsonData
-               {
-                   ["event_type"] = "game_addiction",
-                   ["extra"] = "{product_name: '插屏广告完成'}",
-               };
-               StarkSDK.API.StarkSendToTAQ(data);
            },
            (it, str) => {
                Debug.LogError("Error->" + str);
-               StarkSDKSpace.AndroidUIManager.ShowToast("广告加载异常，请稍后再试");
            });
             gameOverPanel.SetActive(true);
 
@@ -211,7 +203,7 @@ public class PlayerController : MonoBehaviour
     }
     public void PlayerReset()
     {
-        ShowVideoAd("192if3b93qo6991ed0",
+        ShowVideoAd("l57jo48s04211ohnc7",
             (bol) => {
                 if (bol)
                 {
